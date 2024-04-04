@@ -24,7 +24,7 @@
             Console.WriteLine("Enter the unit of measurement of the ingredient (cup, tablespoon etc.)");
             string unitMeas = Console.ReadLine();
 
-            //array
+            //array created
             ingredients[i] = new Ingredients
             {
                 name = nameIng,
