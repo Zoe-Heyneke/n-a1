@@ -43,6 +43,38 @@
             steps[i] = Console.ReadLine();
         }
 
+        bool continueMenu = true;
+
+        while(continueMenu)
+        {
+            Console.WriteLine("Display recipe (d)");
+            Console.WriteLine("Scale (s)");
+            Console.WriteLine("Reset (r)");
+            Console.WriteLine("Clear (c)");
+            Console.WriteLine("Exit (e)");
+
+            string menu = Console.ReadLine();
+
+            switch(menu)
+            {
+                case "d":
+                    //
+                    break;
+                case "s":
+                    //
+                    break;
+                case "r":
+                    //
+                    break;
+                case "c":
+                    //
+                    break;
+                case "e":
+                    //
+                    break;
+            }
+        }
+
     }
 
 }
