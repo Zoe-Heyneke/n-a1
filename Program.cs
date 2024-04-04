@@ -73,6 +73,30 @@
                     break;
                 case "s":
                     //
+                    Console.WriteLine("Choose a scaling ctore");
+                    Console.WriteLine("0.5 (half)");
+                    Console.WriteLine("2 (double)");
+                    Console.WriteLine("3 (triple)");
+                    Console.WriteLine("Go back (back)");
+
+                    string scalingFactor = Console.ReadLine();
+
+                    switch(scalingFactor)
+                    {
+                        case "half":
+                            //
+                            break;
+                        case "double":
+                            //
+                            break;
+                        case "triple":
+                            //
+                            break;
+                        case "back":
+                            //
+                            break;
+                    }
+                  
                     break;
                 case "r":
                     //
