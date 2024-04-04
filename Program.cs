@@ -58,7 +58,18 @@
             switch(menu)
             {
                 case "d":
-                    //
+                    //error?
+                    Console.WriteLine("Display of recipe:");
+                    Console.WriteLine("Recipe Ingredients");
+                    foreach(var ingredient in ingredients)
+                    {
+                        Console.WriteLine($"{ingredient.name}: {ingredient.quantity} {ingredient.unitsOfMeasuremets}");
+                    }
+                    Console.WriteLine("Recipe steps");
+                    for (int i = 0; i < numSteps; i++)
+                        {
+                        Console.WriteLine($"Step {i + 1}: {steps[i]}");
+                    }
                     break;
                 case "s":
                     //
