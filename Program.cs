@@ -1,4 +1,6 @@
-﻿internal class Program
+﻿using System;
+
+internal class Program
 {
     public class Ingredients
     {
@@ -35,6 +37,7 @@
 
         Console.WriteLine("Enter the number of steps that the recipe requires:");
             int numSteps = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("Number of steps chosen are:" + numSteps);
 
         string[] steps = new string[numSteps];
         for (int i = 0; i < numSteps;i++)
