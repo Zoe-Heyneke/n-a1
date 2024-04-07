@@ -127,6 +127,16 @@
                     break;
                 case "c":
                     //
+                    for(int i = 0; i < numIng; i++)
+                    {
+                        ingredients[i].quantity = 0;
+                    }
+
+                    for(int i = 0; i < numSteps; i++)
+                    {
+                        steps[i] = "";
+                    }
+                    Console.WriteLine("Data cleared...enter new recipe");
                     break;
                 case "e":
                     //
