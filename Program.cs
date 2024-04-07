@@ -112,7 +112,9 @@
                             break;
                         case "back":
                             //
-                            continueMenu = true;
+                            continue;
+                        default:
+                            Console.WriteLine("Invalid selection");
                             break;
                     }
                   
@@ -126,7 +128,10 @@
                     Console.WriteLine("Reset of recipe successful");
                     break;
                 case "c":
-                    //
+                    //other option
+                    //Array.Clear(ingredients, 0, ingredients.Length);
+                    //Array.Clear(steps, 0, steps.Length);
+                    //Console.WriteLine("Data cleared");
                     for(int i = 0; i < numIng; i++)
                     {
                         ingredients[i].quantity = 0;
@@ -140,8 +145,10 @@
                     break;
                 case "e":
                     //
-                    default:
                     continueMenu = false;
+                    break;
+                default:
+                    Console.WriteLine("Invalid selection");
                     break;
             }
         }
