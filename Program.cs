@@ -140,6 +140,8 @@
                     break;
                 case "e":
                     //
+                    default:
+                    continueMenu = false;
                     break;
             }
         }
