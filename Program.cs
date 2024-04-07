@@ -85,15 +85,28 @@
                     {
                         case "half":
                             //
+                            foreach(var ingredient in ingredients)
+                            {
+                                ingredient.quantity = ingredient.quantity * 0.5;
+                            }
                             break;
                         case "double":
                             //
+                            foreach (var ingredient in ingredients)
+                            {
+                                ingredient.quantity = ingredient.quantity * 2;
+                            }
                             break;
                         case "triple":
                             //
+                            foreach (var ingredient in ingredients)
+                            {
+                                ingredient.quantity = ingredient.quantity * 3;
+                            }
                             break;
                         case "back":
                             //
+                            continueMenu = true;
                             break;
                     }
                   
