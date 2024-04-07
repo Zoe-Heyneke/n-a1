@@ -43,6 +43,12 @@
             steps[i] = Console.ReadLine();
         }
 
+        double[] origQuantities = new double[numIng];
+        for (int i = 0; i  < numIng; i++)
+        {
+            origQuantities[i] = ingredients[i].quantity;
+        }
+
         bool continueMenu = true;
 
         while(continueMenu)
@@ -113,6 +119,11 @@
                     break;
                 case "r":
                     //
+                    for (int i = 0; i < numIng; i++)
+                    {
+                        ingredients[i].quantity = origQuantities[i];
+                    }
+                    Console.WriteLine("Reset of recipe successful");
                     break;
                 case "c":
                     //
